@@ -23,6 +23,13 @@ h2 {
 h1 {
   font-size: 96px;
 }
+.navigation-links a {
+  display: flex;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 5px 5px;
+  text-decoration: none;
+}
 
 h2 {
   font-size: 48px;
@@ -56,7 +63,6 @@ p {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
-  text-transform: capitalize;
 }
 .navigation-link {
   display: flex;
@@ -68,7 +74,6 @@ p {
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
-  text-transform: capitalize;
 }
 .contact-link {
   background: var(--primary-color);
@@ -106,4 +111,39 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 10px;
+  }
+  .largephoto {
+    display: none;
+  }
+  .text-start {
+    font-size: 14px;
+  }
+  .contact-link {
+    font-size: 14px;
+  }
+  .navigation-links {
+    margin-top: 10px;
+  }
+  .navigation-link {
+    justify-content: center;
+  }
+  .navigation-links a,
+  .navigation-link a {
+    border-radius: 4px;
+    padding: 5px 5px;
+  }
+  .navbar-brand {
+    display: none;
+  }
 }
